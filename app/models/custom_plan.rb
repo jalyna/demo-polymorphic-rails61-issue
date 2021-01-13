@@ -1,0 +1,2 @@
+class CustomPlan < ApplicationRecord
+end
