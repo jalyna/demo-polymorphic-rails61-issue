@@ -10,6 +10,6 @@ class SubscriptionTest < ActiveSupport::TestCase
   end
 
   test "loads no subscription when no plans are given by relation (polymorphic belongs-to)" do
-    assert_nil Subscription.find_by(plan: PublicPlan.all) # fails on 6.1.0 and 6.1.1
+    assert_nil Subscription.find_by(plan: PublicPlan.all)
   end
 end
